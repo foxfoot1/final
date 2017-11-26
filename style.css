@@ -1,0 +1,23 @@
+@font-face {
+font-family: "LemonMilk";
+src: url("LemonMilk.otf");
+}
+
+body {
+  font-family: "LemonMilk";
+  font-size: 120px;
+  text-align: center;
+  background-color: #232323;
+}
+
+
+.grow {
+  width: 100px;
+  animation: grow-animation .475s linear infinite;
+}
+
+@keyframes grow-animation {
+  0% { transform: scale(1); }
+  20% {transform: scale(2); }
+  40% {transform: scale(1); }
+}

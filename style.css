@@ -5,19 +5,133 @@ src: url("LemonMilk.otf");
 
 body {
   font-family: "LemonMilk";
-  font-size: 120px;
-  text-align: center;
-  background-color: #232323;
+  color: white;
+      animation: colorchange 450ms; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 450ms linear infinite; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #232323;}
+      50%  {background: #303030;}
+      100% {background: #232323;}
+}
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #232323;}
+      50%  {background: #303030;}
+      100% {background: #232323;}
 }
 
 
 .grow {
-  width: 100px;
-  animation: grow-animation .475s linear infinite;
+  width: 100%;
+  position: absolute;
+  left: (50%);
+  top: 100px;
+  text-align: center;
+  font-size: 10vw;
 }
 
+.green {
+  animation: grow-animation 450ms linear infinite,
+            green-animation 450ms linear infinite;
+}
+.blue {
+  animation: grow-animation 450ms linear infinite,
+            blue-animation 450ms linear infinite;
+}
+
+.red {
+  animation: grow-animation 450ms linear infinite,
+            red-animation 450ms linear infinite;
+}
+
+.purple {
+  animation: grow-animation 450ms linear infinite,
+            purple-animation 450ms linear infinite;
+}
+
+.teal {
+  animation: grow-animation 450ms linear infinite,
+            teal-animation 450ms linear infinite;
+}
+
+.yellow {
+  animation: grow-animation 450ms linear infinite,
+            yellow-animation 450ms linear infinite;
+}
+
+
+.aqua {
+  animation: grow-animation 450ms linear infinite,
+            aqua-animation 450ms linear infinite;
+}
+
+.aquamarine {
+  animation: grow-animation 450ms linear infinite,
+            aquamarine-animation 450ms linear infinite;
+}
+
+.darkorange {
+  animation: grow-animation 450ms linear infinite,
+            darkorange-animation 450ms linear infinite;
+}
+.deeppink {
+  animation: grow-animation 450ms linear infinite,
+            deeppink-animation 450ms linear infinite;
+}
+.yellowgreen {
+  animation: grow-animation 450ms linear infinite,
+            yellowgreen-animation 450ms linear infinite;
+}
 @keyframes grow-animation {
   0% { transform: scale(1); }
   20% {transform: scale(2); }
   40% {transform: scale(1); }
+}
+
+@keyframes green-animation {
+  10% {color: green;}
+}
+@keyframes blue-animation {
+  10% {color: royalblue;}
+}
+
+@keyframes red-animation {
+  10% {color: red;}
+}
+
+@keyframes purple-animation {
+  10% {color: purple;}
+}
+
+@keyframes teal-animation {
+  10% {color: teal;}
+}
+
+@keyframes yellow-animation {
+  10% {color: yellow;}
+}
+
+@keyframes aqua-animation {
+  10% {color: aqua;}
+}
+
+@keyframes aquamarine-animation {
+  10% {color: aquamarine;}
+}
+
+@keyframes deeppink-animation {
+  10% {color: deeppink;}
+}
+
+@keyframes darkorange-animation {
+  10% {color: darkorange;}
+}
+
+@keyframes yellowgreen-animation {
+  10% {color: yellowgreen;}
 }
